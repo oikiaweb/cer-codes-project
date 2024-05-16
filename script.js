@@ -16,8 +16,7 @@ searchInput.addEventListener('input', () => {
         item &&
         item.description &&
         typeof item.description === 'string' &&
-        item.description.toLowerCase().includes(query) ||
-        item.code.includes(query)
+        (item.description.toLowerCase().includes(query) || item.code.includes(query))
     );
     
     displayResults(filteredResults);
