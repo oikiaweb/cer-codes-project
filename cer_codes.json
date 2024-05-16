@@ -178,7 +178,7 @@
 { "code": "06 04 99", "description": "rifiuti non specificati altrimenti" },
 { "code": "06 05", "description": "fanghi da trattamento in loco degli effluenti" },
 { "code": "06 05 02*", "description": "fanghi da trattamento in loco di effluenti, contenenti sostanze pericolose" },
-{ "code": "06 05 03", "description": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 06 05 02
+{ "code": "06 05 03", "description": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 06 05 02" },
 { "code": "06 06", "description": "rifiuti della produzione, formulazione, fornitura e uso di prodotti chimici contenenti zolfo, dei processi chimici dello zolfo e dei processi di desolforazione" },
 { "code": "06 06 02*", "description": "rifiuti contenenti solfuri pericolosi" },
 { "code": "06 06 03", "description": "rifiuti contenenti solfuri, diversi da quelli di cui alla voce 06 06 02" },
