@@ -13,7 +13,11 @@ fetch('cer_codes.json')
 searchInput.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase();
     const filteredResults = cerCodes.filter(item => 
-        item && item.description && typeof item.description === 'string' && (item.description.toLowerCase().includes(query) || item.code.includes(query))
+        item &&
+        item.description &&
+        typeof item.description === 'string' &&
+        item.description.toLowerCase().includes(query) ||
+        item.code.includes(query)
     );
     
     displayResults(filteredResults);
