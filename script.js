@@ -42,7 +42,8 @@ searchInput.addEventListener('input', () => {
 
 // Aggiungi event listener per il toggle della ricerca avanzata
 advancedSearchToggle.addEventListener('click', () => {
-    if (advancedSearch.style.display === 'none') {
+    console.log('Pulsante ricerca avanzata cliccato');  // Debug log
+    if (advancedSearch.style.display === 'none' || advancedSearch.style.display === '') {
         advancedSearch.style.display = 'block';
     } else {
         advancedSearch.style.display = 'none';
@@ -64,14 +65,4 @@ advancedSearchToggle.addEventListener('click', () => {
         
         displayResults(filteredResults);
     });
-});
-
-// Codice di verifica debugging
-advancedSearchToggle.addEventListener('click', () => {
-    console.log('Pulsante ricerca avanzata cliccato');
-    if (advancedSearch.style.display === 'none') {
-        advancedSearch.style.display = 'block';
-    } else {
-        advancedSearch.style.display = 'none';
-    }
 });
