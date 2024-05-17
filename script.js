@@ -42,7 +42,11 @@ searchInput.addEventListener('input', () => {
 
 // Aggiungi event listener per il toggle della ricerca avanzata
 advancedSearchToggle.addEventListener('click', () => {
-    advancedSearch.style.display = advancedSearch.style.display === 'none' ? 'block' : 'none';
+    if (advancedSearch.style.display === 'none') {
+        advancedSearch.style.display = 'block';
+    } else {
+        advancedSearch.style.display = 'none';
+    }
 });
 
 // Aggiungi event listener per la ricerca avanzata
@@ -54,9 +58,20 @@ advancedSearchToggle.addEventListener('click', () => {
             item &&
             item.description &&
             typeof item.description === 'string' &&
-            (item.code.includes(codeQuery) && item.description.toLowerCase().includes(descriptionQuery))
+            item.code.includes(codeQuery) &&
+            item.description.toLowerCase().includes(descriptionQuery)
         );
         
         displayResults(filteredResults);
     });
+});
+
+// Codice di verifica debugging
+advancedSearchToggle.addEventListener('click', () => {
+    console.log('Pulsante ricerca avanzata cliccato');
+    if (advancedSearch.style.display === 'none') {
+        advancedSearch.style.display = 'block';
+    } else {
+        advancedSearch.style.display = 'none';
+    }
 });
