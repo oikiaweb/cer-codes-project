@@ -69,4 +69,3 @@ advancedSearchToggle.addEventListener('click', () => {
         displayResults(filteredResults);
     });
 });
-
