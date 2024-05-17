@@ -9,6 +9,11 @@
 <body>
     <h1>Ricerca Codici CER</h1>
     <input type="text" id="searchInput" placeholder="Inserisci una parola chiave...">
+    <button id="advancedSearchToggle">Ricerca Avanzata</button>
+    <div id="advancedSearch" style="display: none;">
+        <input type="text" id="codeInput" placeholder="Inserisci il codice CER...">
+        <input type="text" id="descriptionInput" placeholder="Inserisci la descrizione...">
+    </div>
     <ul id="results"></ul>
 
     <script src="script.js"></script>
