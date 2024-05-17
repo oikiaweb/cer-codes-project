@@ -7,7 +7,7 @@ h1 {
     font-size: 24px;
 }
 
-input, button {
+button {
     display: block;
     margin: 10px 0;
     padding: 10px;
@@ -16,13 +16,6 @@ input, button {
 
 #advancedSearch {
     margin-top: 20px;
-}
-
-#results {
-    list-style-type: none;
-    padding: 0;
-}
-
-#results li {
-    padding: 5px 0;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
